@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="assets/CSS-styles/index.css">
+    <script src="assets/javascript/counter.js" defer></script>
+    <script src="assets/javascript/index.js"></script>
+</head>
+<body>
+
+    <div>
+        <nav class="navbar">
+          <!-- LOGO -->
+          <div class="logo">MWANGAZA DAIRY FARM</div>
+          <!-- NAVIGATION MENU -->
+          <ul class="nav-links">
+            <div class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li class="services">
+                <a href="#">Sheds</a>
+                <!-- DROPDOWN MENU -->
+                <ul class="dropdown">
+                  <li><a href="#">Shed A </a></li>
+                  <li><a href="#">Shed B</a></li>
+                  <li><a href="#">Shed C</a></li>
+                  <li><a href="#">shed D</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+
+      <!--first section with background video-->
+
+      <div>
+        <div class="main">
+          <div class="sub-main">
+            <div>
+              <h1>BRIEF HISTORY OF THE FARM</h1>
+            </div>
+            <div class="side">
+              <div class="sideba">
+                <img src="assets/media/images/icon-0.png" class="icon" alt="" />
+                <h4>OWNER</h4>
+              </div>
+
+              <div class="sideba">
+                <img src="assets/media/images/icon-1.png" class="icon" alt="" />
+                <h4>LOCATION</h4>
+              </div>
+              <div class="sideba">
+                <img src="assets/media/images/icon-2.png" class="icon" alt="" />
+                <h4>Breeds</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <video
+          class="video"
+          autoplay
+          loop
+          muted
+          poster="https://assets.codepen.io/6093409/river.jpg"
+        >
+          <source src="assets/media/videos/1053066812-preview.mp4" />
+        </video>
+      </div>
+
+
+
+
+
+
+
+    <!--form data-->
+    <H1>GENERATE REPORT</H1>
+    <H3>RECORD THE DATA IN THE FORM BELOW</H3>
+    <div class="indirect">
+
+        <div class="direct">
+            <form action="submit" onsubmit="produceReport();">
+
+                <div>
+                    <label for="shed_A">shed_A: milk in (litres)</label>
+                    <input type="number" name="" id="shed_A" required>
+                </div>
+                <div>
+                    <label for="shed_B">shed_B: milk in (litres)</label>
+                    <input type="number" name="" id="shed_B" required>
+    
+                </div>
+                <div>
+                    <label for="shed_C">shed_C: milk in (litres)</label>
+                    <input type="number" name="" id="shed_C" required>
+                </div>
+                <div>
+                    <label for="shed_D">shed_D: milk in (litres)</label>
+                    <input type="number" name="" id="shed_D" required >
+    
+                </div>
+                <button type="submit">Daily Record</button>
+    
+                <button id="reset" type="reset" onclick="resetPage();">
+                  Reset
+                </button>
+
+
+            </form>
+          </div>
+
+        </div>
+        <div class="background">
+        
+            <!--output-->
+            <h1>PRODUCTION ANALYSIS</h1>
+            <div>
+
+            <div>
+
+
+              <div>
+                  <h2>Daily Production</h2>
+                  <p id="daily"></p>
+                 
+              </div>
+              <div>
+                  <h2>General Daily income</h2>
+                  <p id="income-daily"></p>
+                  <p id="weekly"></p>
+
+              </div>
+              <div class="months-display">
+                  <h2>General Monthly Income</h2>
+                  <div>
+                      <p id="monthly"></p>
+                  </div>
+                  
+                  <div>
+                      <p id="monthly2"></p>
+                  </div>
+              </div>
+              
+
+              
+          
+            </div>
+
+            <div>
+              <h2>ANNUAL INCOME</h2>
+              
+              <p id="leap"></p>
+
+            </div>
+
+              <!-- END OF DATA DISPLAY -->
+            
+          </div>
+
+          </div>
+
+
+          <video class="video2" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="assets/media/videos/one.mp4" type="video/mp4">
+          </video>
+
+
+
+
+
+  
+            
+
+
+        </div>
+       
+    
+    </div>
+    
+
+    <!--section counter-->
+    <div onload="updateCount()">
+        <div class="counter">
+          <div>
+            <h1>General Statistics</hi>
+          </div>
+          <div class="mincounter">
+            <div>
+              <img
+                src="assets/media/images/cow.jpg"
+                alt="timer"
+                srcset=""
+                class="icon"
+              />
+              <h3 data-target="150000" class="count">0</h3>
+              <h6>No of Cows</h6>
+            </div>
+            <div>
+              <img
+                src="assets/media/images/icon-4.png"
+                alt="Coffee"
+                srcset=""
+                class="icon"
+              />
+              <h3 data-target="1200000" class="count">0</h3>
+              <h6>Land size</h6>
+            </div>
+            <div class="video">
+              <img
+                src="assets/media/images/download.jpeg"
+                alt="night"
+                srcset=""
+                class="icon"
+              />
+              <h3 data-target="50000000" class="count">0</h3>
+              <h6>Revenue Generated</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+</body>
+</html>
